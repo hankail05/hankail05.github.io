@@ -6,10 +6,19 @@
     <description>Recent content in emacs on 가지 않은 길</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kr-ko</language>
-    <lastBuildDate>Sun, 10 May 2020 15:38:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 21:42:00 +0900</lastBuildDate>
     
 	<atom:link href="https://hankail05.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>이맥스 개종 가이드 3 - 개발 환경 구축</title>
+      <link>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-3/</link>
+      <pubDate>Sun, 10 May 2020 21:42:00 +0900</pubDate>
+      
+      <guid>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-3/</guid>
+      <description>&lt;p&gt;이맥스는 마음만 먹으면 다채로운 기능을 가진 에디터로 만들 수 있다. 파이썬을 예시로 이맥스를 ide 비슷하게 개조해보자.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>이맥스 개종 가이드 2 - 사람다운 이맥스 만들기</title>
