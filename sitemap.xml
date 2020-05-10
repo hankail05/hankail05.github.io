@@ -3,15 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hankail05.github.io/categories/</loc>
+    <loc>https://hankail05.github.io/tags/emacs/</loc>
+    <lastmod>2020-05-09T22:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hankail05.github.io/post/</loc>
+    <lastmod>2020-05-09T22:40:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://hankail05.github.io/tags/</loc>
+    <lastmod>2020-05-09T22:40:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://hankail05.github.io/</loc>
+    <lastmod>2020-05-09T22:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-1/</loc>
+    <lastmod>2020-05-09T22:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hankail05.github.io/categories/</loc>
   </url>
   
 </urlset>
