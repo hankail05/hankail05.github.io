@@ -107,7 +107,7 @@ if (!doNotTrack) {
 </code></pre></div><p>모드에 hook을 달아놓으면 그 모드가 활성화 될 때 hook에 걸린 함수도 한꺼번에 실행된다. prog-mode-hook은 프로그래밍 관련된 모든 매이저 모드가 실행될 때 발동되는 hook이다. 즉 위 코드는 파이썬 모드를 활성화 하면 LSP를 작동시키는 것과 같다.</p>
 <p>lsp-mode에서는 기본 키맵을 지원한다. 다른 패키지들도 키뱁을 지원하는 경우가 일반적이다. 다만 lsp는 그 키맵이 조금 불편하다. 무려 <code>S-l</code> 에서 파생되여, 윈도우든 리눅스든 시스템 단축키와 쉽게 겹쳐버린다. 따라서 우리는 이 키맵을 살짝 수정할 것이다. 마침 <code>S-l</code> 을 이후의 키맵은 조합키를 쓰지 않으니 키맵을 그대로 들고 다른 단축키에 집어넣자. 간단하게 패키지 내에 있는 키맵을 찾아서 기존과 같이 할당해주면 된다. 이 상황에서는 다음과 같다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(evil-leader/set-key
-  <span style="color:#e6db74">&#34;l&#34;</span> lsp-command-map)
+  <span style="color:#e6db74">&#34;l&#34;</span> <span style="color:#e6db74">&#39;lsp-command-map</span>)
 </code></pre></div><p>위 코드를 eval하면 이제 prefix로 <code>S-l</code> 대신 <code>SPC l</code> 를 입력할 수 있다. 이렇게 키맵을 하나씩 지정하는 것 말고도 기존 키맵을 다른 단축키에 박아버리는 방법도 존재한다.</p>
 <p>LSP를 켜는 단축키는 <code>&lt;prefix&gt; s s</code> , 함수를 정의를 찾으려면 <code>&lt;prefix&gt; g g</code> 를 입력하면 된다. 자세한 키맵은 <a href="https://emacs-lsp.github.io/lsp-mode/page/keybindings/">여길</a> 참고하면 된다.</p>
 <h2 id="company">company</h2>
@@ -141,7 +141,7 @@ if (!doNotTrack) {
 (add-hook <span style="color:#e6db74">&#39;python-mode-hook</span> <span style="color:#f92672">&#39;</span>(lambda ()
                                (unless (<span style="color:#a6e22e">eq</span> <span style="color:#a6e22e">buffer-file-name</span> <span style="color:#66d9ef">nil</span>)
                                  (setq-local venv-location (<span style="color:#a6e22e">directory-file-name</span> <span style="color:#a6e22e">buffer-file-name</span>)))))
-(add-hook <span style="color:#e6db74">&#39;python-mode-hook</span> auto-virtualenvwrapper-activate)
+(add-hook <span style="color:#e6db74">&#39;python-mode-hook</span> <span style="color:#e6db74">&#39;auto-virtualenvwrapper-activate</span>)
 </code></pre></div><p>로 설정하면 파이썬 파일을 열었을 때 알아서 프로젝트 루트에 있는 <code>venv</code> 디렉토리를 찾아 가상완경을 활성화한다.</p>
 <h2 id="기타-파이썬-프로그래밍에-도움되는-것들">기타 파이썬 프로그래밍에 도움되는 것들</h2>
 <p><code>C-c C-p</code> 로 파이썬 쉘을 실행할 수 있다. 그 후 코드를 드래그(혹은 visual state로 선택)한 뒤 <code>C-c C-r</code> 을 누르면 지정된 소스코드가 쉘로 전송되어 인터프리터에 로드된다. 이로인해 이맥스에서는 repl이 쉽다.</p>
