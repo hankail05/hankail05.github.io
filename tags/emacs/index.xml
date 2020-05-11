@@ -6,10 +6,19 @@
     <description>Recent content in emacs on 가지 않은 길</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kr-ko</language>
-    <lastBuildDate>Sun, 10 May 2020 21:42:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 20:47:00 +0900</lastBuildDate>
     
 	<atom:link href="https://hankail05.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>이맥스 개종 가이드 4 - 기타 유틸리티</title>
+      <link>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-4/</link>
+      <pubDate>Mon, 11 May 2020 20:47:00 +0900</pubDate>
+      
+      <guid>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-4/</guid>
+      <description>&lt;p&gt;작성자 엄선 이맥스 패키지를 마구 깔아서 편의성을 극대화해보자&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>이맥스 개종 가이드 3 - 개발 환경 구축</title>

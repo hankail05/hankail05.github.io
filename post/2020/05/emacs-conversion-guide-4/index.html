@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>이맥스 개종 가이드 4 - 기타 유틸리티 - 가지 않은 길</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="이맥스 개종 가이드 4 - 기타 유틸리티" />
+<meta property="og:description" content="작성자 엄선 이맥스 패키지를 마구 깔아서 편의성을 극대화해보자" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-4/" />
+<meta property="og:image" content="https://hankail05.github.io/images/main.png"/>
+<meta property="article:published_time" content="2020-05-11T20:47:00+09:00" />
+<meta property="article:modified_time" content="2020-05-11T20:47:00+09:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164655053-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="가지 않은 길" rel="home">
+				<div class="logo__title">가지 않은 길</div>
+				<div class="logo__tagline">진귀한 글을 적기 위해 노력함</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+                
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-164655053-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+                <meta property="og:title" content="이맥스 개종 가이드 4 - 기타 유틸리티" />
+<meta property="og:description" content="작성자 엄선 이맥스 패키지를 마구 깔아서 편의성을 극대화해보자" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-4/" />
+<meta property="og:image" content="https://hankail05.github.io/images/main.png"/>
+<meta property="article:published_time" content="2020-05-11T20:47:00+09:00" />
+<meta property="article:modified_time" content="2020-05-11T20:47:00+09:00" />
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">이맥스 개종 가이드 4 - 기타 유틸리티</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-11T20:47:00&#43;09:00">2020-05-11</time></div></div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/images/real-programmers-use-emacs.png" alt="이맥스 개종 가이드 4 - 기타 유틸리티">
+		</figure><div class="content post__content clearfix">
+			<p>작성자 엄선 이맥스 패키지를 마구 깔아서 편의성을 극대화해보자</p>
+<p>이 장은 본인이 엄선한 패키지를 나열한 페이지다. 자신은 추천도 필요없고 스스로 다 비교해보면서 구축하겠다는 사람은 이 장을 건너뛰면 된다. 근데 그러면 이 글을 쓴 의미가&hellip; 아악</p>
+<h2 id="leaf-dot-el">leaf.el</h2>
+<p><a href="https://github.com/conao3/leaf.el">leaf.el</a>은 패키지 관리를 보다 쉽게 할 수 있도록 도와주는 패키지 이다. 이 패키지를 사용하면 패키지 하나를 설정할 때, 코드들을 하나의 블럭으로 묶을 수 있어 <code>init.el</code> 파일이 간략하고 깔끔해진다.</p>
+<p>가령 본인의 company 설정</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(require <span style="color:#e6db74">&#39;company</span>)
+
+(add-hook <span style="color:#e6db74">&#39;prog-mode-hook</span> <span style="color:#e6db74">&#39;company-mode</span>)
+(add-hook <span style="color:#e6db74">&#39;org-mode-hook</span> <span style="color:#e6db74">&#39;company-mode</span>)
+
+(setq company-idle-delay <span style="color:#ae81ff">0</span>)
+(setq company-minimum-prefix-length <span style="color:#ae81ff">2</span>)
+(setq company-backends <span style="color:#f92672">&#39;</span>((company-dabbrev-code :separate company-capf company-keywords)
+                         company-files
+                         company-keywords
+                         company-capf
+                         company-yasnippet
+                         company-abbrev
+                         company-dabbrev))
+
+(setq company-echo-truncate-lines <span style="color:#66d9ef">t</span>)
+(setq company-tooltip-align-annotations <span style="color:#66d9ef">t</span>)
+
+(<span style="color:#a6e22e">define-key</span> company-active-map (kbd <span style="color:#e6db74">&#34;TAB&#34;</span>) <span style="color:#e6db74">&#39;company-complete</span>)
+</code></pre></div><p>을</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(leaf company
+  :ensure <span style="color:#66d9ef">t</span>
+  :hook (((prog-mode-hook org-mode-hook) <span style="color:#f92672">.</span> company-mode))
+  :setq ((company-idle-delay <span style="color:#f92672">.</span> <span style="color:#ae81ff">0</span>)
+         (company-minimum-prefix-length <span style="color:#f92672">.</span> <span style="color:#ae81ff">2</span>)
+         (company-backends <span style="color:#f92672">.</span> <span style="color:#f92672">&#39;</span>((company-dabbrev-code :separate company-capf company-keywords)
+                               company-files
+                               company-keywords
+                               company-capf
+                               company-yasnippet
+                               company-abbrev
+                               company-dabbrev))
+         (company-echo-truncate-lines <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>)
+         (company-tooltip-align-annotations <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>))
+  :bind (:company-active-map
+         (<span style="color:#e6db74">&#34;&lt;tab&gt;&#34;</span> <span style="color:#f92672">.</span> company-complete)))
+</code></pre></div><p>이런 식으로 깔끔하게 만들 수 있다. leaf의 인자로 패키지를 받을 경우 <code>require</code> 로 패키지를 로드하는 것과 같은 효과를 낸다. leaf의 대부분의 키워드는 변수와 변수에 집어넣을 값을 <code>.</code> 으로 구분한다. 다음은 leaf를 쓸 때 외워두면 좋은 키워드를 나열한 것이다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">:hook (some-hook . some-function) - (add-hook &#39;some-hook &#39;some-function) 과 같음
+:setq (some-variable . some-value) - (setq some-variable some-value) 와 같음
+:bind (some-keymap
+       (some-key . some-function)) - (define-key some-keymap some-key &#39;some-function) 와 같음
+:init (some-function) - 패키지가 로드 되기 이전에 실행되는 함수
+:config (some-function) - 패키지가 로드 된 이후 실행되는 함수. 상기 키워드를 제외한 나머지를 넣으면 됨
+:load-path (some-path) - 패키지 매니저로 설치하지 않은 패키지를 로드할 때 사용. 다음 장에 설명
+</code></pre></div><p>패키지 초기화 함수 같은 경우에는 패키지가 로드된 뒤 실행해야 하므로 <code>:config</code> 키워드 뒤에 붙이면 된다.</p>
+<h2 id="괄호-관련-패키지">괄호 관련 패키지</h2>
+<p>우리 모두 괄호에 대해 안 좋은 경험을 갖고 있을 것이다. 페어 안 맞는다고 터지고, 괄호를 일일이 지우고 새로 붙인다고 왔다갔다 거리고, 리슾 프로그래밍을 한 사람은 무수한 괄호의 홍수에 파묻혔던 기억도 있을 것이다.
+<img src="https://imgs.xkcd.com/comics/lisp%5Fcycles.png" alt=""></p>
+<p>다행히, 동서고금을 통틀어 괄호에 대해 학을 뗀 사람들은 에디터에 상관없이 있고, 그들이 만든 좋은 패키지 역시 있다. 이맥스도 마찬가지다.</p>
+<p><a href="https://github.com/Fuco1/smartparens">smartparens</a>는 괄호 삽입 및 수정을 다루는 패키지이다. 괼호 위치 이동, 괄호 삽입/교체/제거, 이어붙이기, 등등 좋은 기능도 많지만, 가장 중요한 기능은 strict pairing이다. 괄호를 열면 커서 바로 옆에 닫아주고, 괄호를 반드시 짝 맞추기 때문에 백스페이스 연타해도 실수로 괄호를 지울 염려가 없다.</p>
+<p>smartparens는 문서에 예제가 잘 되어 있어 여기서 다루지 않겠다. 다만 제대로 써먹기 위해선 약간 설정이 필요해 그것만 언급하겠다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(leaf smartparens
+  :init (require <span style="color:#e6db74">&#39;smartparens-config</span>)
+  :setq ((sp-ignore-modes-list <span style="color:#f92672">.</span> (<span style="color:#a6e22e">delete</span> <span style="color:#e6db74">&#39;minibuffer-inactive-mode</span> sp-ignore-modes-list))
+         (sp-escape-quotes-after-insert <span style="color:#f92672">.</span> <span style="color:#66d9ef">nil</span>))
+  :config
+  (smartparens-global-strict-mode)
+  (sp-local-pair <span style="color:#e6db74">&#39;minibuffer-inactive-mode</span> <span style="color:#e6db74">&#34;&#39;&#34;</span> <span style="color:#66d9ef">nil</span> :actions <span style="color:#66d9ef">nil</span>)
+  (when (version&lt;= <span style="color:#e6db74">&#34;27&#34;</span> emacs-version)
+    (dolist (parens <span style="color:#f92672">&#39;</span>(c-electric-paren c-electric-brace c-electric-slash))
+      (add-to-list <span style="color:#e6db74">&#39;sp--special-self-insert-commands</span> parens))))
+</code></pre></div><p>위와 같이 설정해줘야 C에서 괄호가 정상 작동하며 emacs-lisp을 다룰 때 <code>'</code> 가 하나만 찍힌다. 리슾계열에서 <code>'</code> 는 하나만 쓰므로 위와 같이 설정해줘야 오류를 뿜지 않는다. evil 유저는 <a href="https://github.com/expez/evil-smartparens">evil-smartparens</a>를 깔아야 evil과 잘 굴러간다.</p>
+<p>다음 설명할 패키지는 <a href="https://github.com/emacs-evil/evil-surround">evil-surround</a>이다. 빔 플러그인이 포팅된 패키지로, 괄호 삽입/교체/삭제 만 따지자면 evil에 더 잘 녹아들어 편하다. 이 패키지 역시 문서에 예제가 잘 되어있어 언급하지 않겠다.</p>
+<p>마지막 패키지는 <a href="https://github.com/Fanael/rainbow-delimiters">rainbow-delimiters</a>이다. 괄호쌍을 색칠해주는 패키지로, 이것만 있으면 괄호의 늪을 해쳐나갈 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(leaf rainbow-delimiters
+  :straight <span style="color:#66d9ef">t</span>
+  :hook ((prog-mode-hook org-mode-hook) <span style="color:#f92672">.</span> rainbow-delimiters-mode))
+</code></pre></div><p>로 설치만 해두면 괄호가 알록달록해져 코드 블록이 더 잘 구분된다.</p>
+<figure>
+    <img src="/images/parens.png"/> 
+</figure>
+
+<h2 id="yasnippet">yasnippet</h2>
+<p><a href="https://github.com/joaotavora/yasnippet">yasnippet</a>은 이맥스의 템플릿 패키지이다. 다양한 언어를 지원하며, 축약된 단어를 입력하고 TAB을 누르거나 <code>M-x yas-insert-snippet</code> 으로 템플릿을 넣을 수 있어 보일러플레이트를 입력하기 편해진다.</p>
+<h2 id="pdf-tools">pdf-tools</h2>
+<p><a href="https://github.com/politza/pdf-tools">pdf-tools</a>는 이맥스에서 pdf를 렌더링해주는 패키지이다. 기본으로 지원하는 Docview보다 성능이 준수하고 기능성도 더 좋아서 이것을 쓴다. 굳이 다른 걸 냅두고 이맥스 내에서 뷰어를 쓰는 이유는 키맵을 그대로 끌어다 끌 수 있기 때문이다. 이것은 다른 패키지(메일, 뮤직 플레이어 등<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>)에도 그대로 적용된다.</p>
+<p>pdf-tools는 설치 과정이 하나 더 있다. 평소대로 패키지 설치를 한 뒤, 다음 함수를 실행해야 정상적으로 작동한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(pdf-tools-install)
+</code></pre></div><h2 id="which-key">which-key</h2>
+<p><a href="https://github.com/justbur/emacs-which-key">which-key</a> 키 입력 기반 치트시트 패키지이다. 매 번 키맵을 까먹을 때 마다 레퍼런스나 설정 파일을 열 필요 없이 그냥 기억나는 키 시퀀스를 입력하면 그에 해당되는 키맵을 화면 아래에 보여주기 때문에 키맵에 익숙해지는 데에 큰 도움을 준다. 한가지 팁이 있는데, prefix가 없는 키맵을 보고 싶다면 which-key 치트시트를 연 뒤 <code>C-h u</code> 를 입력하면 된다.</p>
+<h2 id="테마">테마</h2>
+<p>의외로 테마도 중요한 요소이다. 하루종일 화면만 들여다 볼텐데 배경이 하얗거나 폰트 컬러링이 엉망이면 눈이 썩어들어갈 것이다. 따라서 적절한 테마를 찾아서 설치해야 눈을 보호하는 지름길로 나아갈 수 있다. 본인은 배경이 검은 테마가 없어 직접 테마를 작성했지만 처음부터 테마를 작성하는 짓은 가혹하므로 둘러봤던 테마 중 하나를 추천한다. 바로 <a href="https://github.com/hlissner/emacs-doom-themes">doom-themes</a>의 one-dark 테마이다. 구성 자체도 깔끔하고, 많은 패키지의 테마를 지원해 어지간한 패키지에 다 적용된다.</p>
+<h2 id="evil-하위-패키지">evil 하위 패키지</h2>
+<p>기본 단축키를 확장해 키보드를 연타할 일을 없애주는 <a href="https://github.com/PythonNut/evil-easymotion">evil-easymotion</a>, 텍스트 교환을 수월하게 만들어주는 <a href="https://github.com/Dewdrops/evil-exchange">evil-exchange</a>, 코드를 쉽게 주석으로 만들고 풀어주는 <a href="https://github.com/redguardtoo/evil-nerd-commenter">evil-nerd-commenter</a>, 동일한 단어들을 한번에 수정하도록 도와주는 <a href="https://github.com/hlissner/evil-multiedit">evil-multiedit</a> 등이 있다.</p>
+<p>추천 패키지는 이 정도다. 나머지는 그리 자주 안 쓰거나 굳이 필요없다고 생각했거나 까먹은 것들이다. 다른 패키지는 스스로 찾아보자. 그리고 더 좋은 패키지를 발견하면 널리 공유하자. 다음이자 마지막 장에서 설정할 때 유용한 팁으로 가이드를 마치겠다.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>웹브라우징 제외. css를 지원하지 않는다&hellip; <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/emacs/" rel="tag">emacs</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hankail05-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-4/">이맥스 개종 가이드 4 - 기타 유틸리티</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-3/">이맥스 개종 가이드 3 - 개발 환경 구축</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-2/">이맥스 개종 가이드 2 - 사람다운 이맥스 만들기</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-1/">이맥스 개종 가이드 1 - 설치 및 이맥스 기초</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/emacs/" title="emacs">emacs (4)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 hankail05.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.1/es5/sre/sre_browser.min.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
