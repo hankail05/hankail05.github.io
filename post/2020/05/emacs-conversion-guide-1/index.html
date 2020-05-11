@@ -19,9 +19,9 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://hankail05.github.io/css/style.css">
 	
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="https://hankail05.github.io/favicon.ico">
 		
 <script type="application/javascript">
 var doNotTrack = false;
@@ -40,7 +40,7 @@ if (!doNotTrack) {
 		<header class="header">
 	<div class="container">
 		<div class="logo">
-			<a class="logo__link" href="/" title="가지 않은 길" rel="home">
+			<a class="logo__link" href="https://hankail05.github.io/" title="가지 않은 길" rel="home">
 				<div class="logo__title">가지 않은 길</div>
 				<div class="logo__tagline">진귀한 글을 적기 위해 노력함</div>
 			</a>
@@ -83,7 +83,7 @@ if (!doNotTrack) {
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-09T22:40:00&#43;09:00">2020-05-09</time></div></div>
 		</header>
 		<figure class="post__thumbnail">
-			<img src="/images/real-programmers-use-emacs.png" alt="이맥스 개종 가이드 1 - 설치 및 이맥스 기초">
+			<img src="https://hankail05.github.io/images/real-programmers-use-emacs.png" alt="이맥스 개종 가이드 1 - 설치 및 이맥스 기초">
 		</figure><div class="content post__content clearfix">
 			<p>본 가이드는 프로그래밍 갤러리의 <a href="https://gall.dcinside.com/board/view/?id=programming&amp;no=748120">이맥스 개종 가이드</a>를 계승한 글입니다.</p>
 <blockquote>
@@ -99,7 +99,7 @@ if (!doNotTrack) {
 윈도우는 홈페이지 들어가서 설치 프로그램 다운 후 설치.
 </code></pre></div><h2 id="초기-구동-및-단축키">초기 구동 및 단축키</h2>
 <p>이제 이맥스를 켜면 아래와 같은 화면이 나올 것이다.
-<img src="/images/emacs-init.png" alt=""></p>
+<img src="https://hankail05.github.io/images/emacs-init.png" alt=""></p>
 <p>본격적으로 설정을 시작하기 전에, 설정에 필요한 기초를 머리에 넣고 가자. 이맥스에서 키맵(단축키)을 지칭하는 방법은 조금 특이하다. <code>C-</code> 는 ctrl을, <code>M-</code> 는 meta(alt)를, <code>S-</code> 는 super(win, command)를 의미한다. 즉 <code>ctrl-x</code> 는 <code>C-x</code> 로 적는 것이 일반적이다. 또한 종종 <code>RET</code> 이라는 걸 볼 수 있는데 엔터 키이다.</p>
 <p>이맥스에서 기본적인 설정을 하는데에 필요한 키맵은 다음과 같다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">C-x C-f  파일, 디렉토리 열기
@@ -111,7 +111,7 @@ M-x 입력한 명령어 실행
 <p>이맥스에는 탭이 없고 대신 버퍼라는 개념이 있다. 버퍼는 우리가 상호작용하는 내용을 의미하며, 파일을 연다는 것은 곧 파일과 연결되는 버퍼를 연다는 것과 같다. 처음 버퍼 개념을 접할 때는 버퍼=파일이라고 생각하기 쉬운데, 이맥스의 버퍼는 파일 뿐만 아니라 로그 등 입출력이 되는 모든 것은 전부 버퍼이다. <code>M-x</code> 를 누르면 밑에서 깜빡거리는 것이 보일텐데, 이것도 버퍼의 한종류로, 미니버퍼라고 한다. 버퍼를 바꾸려면 <code>C-x b</code> 를 누른 뒤 버퍼 이름을 입력하고, 버퍼를 닫으려면 <code>C-x k</code> 를 누른 뒤 버퍼 이름을 입력하면 된다.</p>
 <p>창(window)은 이 버퍼가 들어가는 공간을 의미한다. 우리는 임의로 창을 만들 수 있으며, <code>C-x 2</code> 로 수직, <code>C-x 3</code> 으로 수평분할할 수 있고, 창을 닫을 때에는 <code>C-x 0</code> 을 누르면 된다. 창이 닫힌다고 해서 버퍼가 닫히는 것은 아니므로 안심해도 된다. 반대로 버퍼 하나를 창 여러개에 띄울 수 있다.</p>
 <figure>
-    <img src="/images/twin-buffers.png"/> 
+    <img src="https://hankail05.github.io/images/twin-buffers.png"/> 
 </figure>
 
 <h2 id="설정-맛보기">설정 맛보기</h2>
@@ -127,7 +127,7 @@ M-x 입력한 명령어 실행
 <p>이제 시범삼아 패키지를 다운로드해보자. 방금 <code>M-x eval-buffer</code> 에서 보았듯, 이맥스의 내장 탐색기는 기본적으로 목록을 띄워주지 않는다. 탭을 누르면 자동완성 목록을 띄워주긴 하지만, 뭔가 시원찮다. 좀 더 익숙한 형태로 바꾸기 위해 패키지를 설치해보자.</p>
 <p>이맥스 탐색 패키지는 <a href="https://github.com/abo-abo/swiper">ivy</a>와 <a href="https://github.com/emacs-helm/helm">helm</a>이 양대산맥을 이루고 있다. 이중 이 가이드에서는 ivy를 설치할 것이다. <code>M-x package-install RET</code> 을 친 뒤 ivy를 쳐서 패키지를 다운 받는다. 다운로드 후 <code>M-x ivy-mode RET</code> 를 입력해 ivy를 실행할 수 있다. 이맥스를 켤 때 마다 실행시키고 싶다면 <code>init.el</code> 에 <code>(require 'ivy) (ivy-mode 1)</code> 를 입력하면 된다. 물론 방금 파일에 적은 코드도 굳이 이맥스를 재실행하지 않고 로드할 수 있다. 상기 코드를 드래그 한 뒤 <code>M-x eval-region</code> 을 입력하면 드래그한 코드만 읽어서 로드할 수 있다.</p>
 <figure>
-    <img src="/images/ivy.png"/> 
+    <img src="https://hankail05.github.io/images/ivy.png"/> 
 </figure>
 
 <p>다시 <code>M-x</code> 를 쳐보면 위와 유사하게 나오는 것을 볼 수 있다.</p>
@@ -139,7 +139,7 @@ M-x 입력한 명령어 실행
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/emacs/" rel="tag">emacs</a>
+			<a class="tags__link btn" href="https://hankail05.github.io/tags/emacs/" rel="tag">emacs</a>
 		</li>
 	</ul>
 </div>
@@ -179,18 +179,18 @@ M-x 입력한 명령어 실행
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-5/">이맥스 개종 가이드 5 - 혼자서 설정할 때 도움되는 정보</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-4/">이맥스 개종 가이드 4 - 기타 유틸리티</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-3/">이맥스 개종 가이드 3 - 개발 환경 구축</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-2/">이맥스 개종 가이드 2 - 사람다운 이맥스 만들기</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-1/">이맥스 개종 가이드 1 - 설치 및 이맥스 기초</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-5/">이맥스 개종 가이드 5 - 혼자서 설정할 때 도움되는 정보</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-4/">이맥스 개종 가이드 4 - 기타 유틸리티</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-3/">이맥스 개종 가이드 3 - 개발 환경 구축</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-2/">이맥스 개종 가이드 2 - 사람다운 이맥스 만들기</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-1/">이맥스 개종 가이드 1 - 설치 및 이맥스 기초</a></li>
 		</ul>
 	</div>
 </div>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/emacs/" title="emacs">emacs (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="https://hankail05.github.io/tags/emacs/" title="emacs">emacs (5)</a>
 	</div>
 </div>
 </aside>
@@ -205,7 +205,7 @@ M-x 입력한 명령어 실행
 	</div>
 </footer>
 	</div>
-<script async defer src="/js/menu.js"></script>
+<script async defer src="https://hankail05.github.io/js/menu.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.1/es5/sre/sre_browser.min.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 </body>

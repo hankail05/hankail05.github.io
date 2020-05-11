@@ -19,9 +19,9 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://hankail05.github.io/css/style.css">
 	
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="https://hankail05.github.io/favicon.ico">
 		
 <script type="application/javascript">
 var doNotTrack = false;
@@ -40,7 +40,7 @@ if (!doNotTrack) {
 		<header class="header">
 	<div class="container">
 		<div class="logo">
-			<a class="logo__link" href="/" title="가지 않은 길" rel="home">
+			<a class="logo__link" href="https://hankail05.github.io/" title="가지 않은 길" rel="home">
 				<div class="logo__title">가지 않은 길</div>
 				<div class="logo__tagline">진귀한 글을 적기 위해 노력함</div>
 			</a>
@@ -83,14 +83,14 @@ if (!doNotTrack) {
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-10T21:42:00&#43;09:00">2020-05-10</time></div></div>
 		</header>
 		<figure class="post__thumbnail">
-			<img src="/images/real-programmers-use-emacs.png" alt="이맥스 개종 가이드 3 - 개발 환경 구축">
+			<img src="https://hankail05.github.io/images/real-programmers-use-emacs.png" alt="이맥스 개종 가이드 3 - 개발 환경 구축">
 		</figure><div class="content post__content clearfix">
 			<p>이맥스는 마음만 먹으면 다채로운 기능을 가진 에디터로 만들 수 있다. 파이썬을 예시로 이맥스를 ide 비슷하게 개조해보자.</p>
 <p>이 장에서는 본격적으로 프로그래밍에 관련된 이야기를 할 것이다. 간단하게 파이썬 개발 환경을 구축하고 깃을 활용 하는 것을 예시로 들 것이다. 본인이 다른 언어를 주력으로 한다면 맨 밑에 나열된 패키지 목록을 참고해서 직접 설치해 보자.</p>
 <h2 id="모드">모드</h2>
 <p>전술했듯 이맥스의 모드는 빔의 그것과는 다르다. 이맥스의 모드는 <code>매이저 모드(major-mode)</code> 와 <code>마이너 모드(minor-mode)</code> 로 나뉜다. 메이저 모드는 현재 버퍼에서 어떤 편집 기능을 활성화할 지 결정한다. c 소스코드에서는 c 전용 기능을 활성화하는 매이저 모드가, 파이썬 소스코드에서는 파이썬 전용 기능을 활성화 하는 매이저 모드가 선택되는 식이다. 매이저 모드는 특별한 패키지가 없다면 버퍼 당 단 하나만 가질 수 있다. 마이너 모드는 매이저 모드 밑에서 활성화 되는 모드로, 어떤 것들은 버퍼 단위로, 어떤 것들은 전역에 활성화된다. 마이너 모드는 갯수 제한이 없고, 이 마이너 모드들을 매이저 모드와 엮어서 매이저 모드가 활성화될 때 같이 활성화되도록 만들 수 있다. 이러한 작업을 <code>hooking</code> 이라고 하며, 이맥스 개발 환경 구축의 핵심이다.</p>
 <figure>
-    <img src="/images/modes.png"/> 
+    <img src="https://hankail05.github.io/images/modes.png"/> 
 </figure>
 
 <p>파이썬 파일을 열면 이렇게 괄호 안의 첫번째에 메이저 모드, 그 뒤로 마이너 모드가 표시된다. 보통 모드에는 테마, 키맵, 훅 등이 들어있다.</p>
@@ -158,27 +158,27 @@ if (!doNotTrack) {
 (evil-magit-init)
 </code></pre></div><p>을 입력하면 설정이 끝난다. magit-status의 기본 키맵은 <code>C-x g</code> 이지만, 위와 같이, 혹은 자기 마음대로 설정해도 된다. magit-status 함수를 실행하면 아래와 같은 화면이 뜰 것이다.</p>
 <figure>
-    <img src="/images/magit-status.png"/> 
+    <img src="https://hankail05.github.io/images/magit-status.png"/> 
 </figure>
 
 <p>스테이지<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>하고 싶은 파일에 커서를 올리거나 visual-state로 긁은 뒤 <code>s</code> 를 누르면 스테이징 된다. 전체를 스테이지 하고 싶으면 <code>S</code> 를 누르면 된다.</p>
 <figure>
-    <img src="/images/magit-stage.png"/> 
+    <img src="https://hankail05.github.io/images/magit-stage.png"/> 
 </figure>
 
 <p>그 후 <code>c</code> 를 누르면 커밋 설정이 뜬다.</p>
 <figure>
-    <img src="/images/magit-commit-menu.png"/> 
+    <img src="https://hankail05.github.io/images/magit-commit-menu.png"/> 
 </figure>
 
 <p>여기서는 그냥 커밋을 할 것이니 <code>c</code> 를 누른다. 그러면 커밋메세지를 입력하는 창과 diff창이 뜬다.</p>
 <figure>
-    <img src="/images/magit-commit-confirmation.png"/> 
+    <img src="https://hankail05.github.io/images/magit-commit-confirmation.png"/> 
 </figure>
 
 <p>커밋 메세지를 입력하고 <code>C-c C-c</code> 를 누르면 커밋이 완료된다. 이제 푸시를 해보자. 푸시를 하려면 <code>p</code> 를 누른다.</p>
 <figure>
-    <img src="/images/magit-push-menu.png"/> 
+    <img src="https://hankail05.github.io/images/magit-push-menu.png"/> 
 </figure>
 
 <p>이때 upstream을 지정하지 않았다면 지정해달라 할 것이고, 아니라면 <code>p</code> 를 다시 눌러서 푸쉬하면 된다. ssh 토큰을 발행해놨다면 바로 푸쉬될 것이고, 아니라면 아이디와 비밀번호를 입력하면 된다.</p>
@@ -202,7 +202,7 @@ if (!doNotTrack) {
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/emacs/" rel="tag">emacs</a>
+			<a class="tags__link btn" href="https://hankail05.github.io/tags/emacs/" rel="tag">emacs</a>
 		</li>
 	</ul>
 </div>
@@ -242,18 +242,18 @@ if (!doNotTrack) {
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-5/">이맥스 개종 가이드 5 - 혼자서 설정할 때 도움되는 정보</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-4/">이맥스 개종 가이드 4 - 기타 유틸리티</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-3/">이맥스 개종 가이드 3 - 개발 환경 구축</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-2/">이맥스 개종 가이드 2 - 사람다운 이맥스 만들기</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/2020/05/emacs-conversion-guide-1/">이맥스 개종 가이드 1 - 설치 및 이맥스 기초</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-5/">이맥스 개종 가이드 5 - 혼자서 설정할 때 도움되는 정보</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-4/">이맥스 개종 가이드 4 - 기타 유틸리티</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-3/">이맥스 개종 가이드 3 - 개발 환경 구축</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-2/">이맥스 개종 가이드 2 - 사람다운 이맥스 만들기</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://hankail05.github.io/post/2020/05/emacs-conversion-guide-1/">이맥스 개종 가이드 1 - 설치 및 이맥스 기초</a></li>
 		</ul>
 	</div>
 </div>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/emacs/" title="emacs">emacs (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="https://hankail05.github.io/tags/emacs/" title="emacs">emacs (5)</a>
 	</div>
 </div>
 </aside>
@@ -268,7 +268,7 @@ if (!doNotTrack) {
 	</div>
 </footer>
 	</div>
-<script async defer src="/js/menu.js"></script>
+<script async defer src="https://hankail05.github.io/js/menu.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.1/es5/sre/sre_browser.min.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 </body>
