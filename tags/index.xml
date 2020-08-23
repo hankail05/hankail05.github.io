@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 가지 않은 길</title>
-    <link>https://hankail05.github.io/tags/</link>
+    <link>https://phrimm136.github.io/tags/</link>
     <description>Recent content in Tags on 가지 않은 길</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kr-ko</language>
-    <lastBuildDate>Wed, 08 Jul 2020 13:20:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2020 13:20:00 +0000</lastBuildDate>
     
-	<atom:link href="https://hankail05.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://phrimm136.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>arch-linux</title>
-      <link>https://hankail05.github.io/tags/arch-linux/</link>
-      <pubDate>Wed, 08 Jul 2020 13:20:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/tags/arch-linux/</link>
+      <pubDate>Wed, 08 Jul 2020 13:20:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/tags/arch-linux/</guid>
+      <guid>https://phrimm136.github.io/tags/arch-linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ssh</title>
-      <link>https://hankail05.github.io/tags/ssh/</link>
-      <pubDate>Wed, 08 Jul 2020 13:20:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/tags/ssh/</link>
+      <pubDate>Wed, 08 Jul 2020 13:20:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/tags/ssh/</guid>
+      <guid>https://phrimm136.github.io/tags/ssh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>wsl</title>
-      <link>https://hankail05.github.io/tags/wsl/</link>
-      <pubDate>Wed, 08 Jul 2020 13:20:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/tags/wsl/</link>
+      <pubDate>Wed, 08 Jul 2020 13:20:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/tags/wsl/</guid>
+      <guid>https://phrimm136.github.io/tags/wsl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
-      <link>https://hankail05.github.io/tags/emacs/</link>
-      <pubDate>Mon, 11 May 2020 22:33:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/tags/emacs/</link>
+      <pubDate>Mon, 11 May 2020 22:33:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/tags/emacs/</guid>
+      <guid>https://phrimm136.github.io/tags/emacs/</guid>
       <description></description>
     </item>
     

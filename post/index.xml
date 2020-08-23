@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 가지 않은 길</title>
-    <link>https://hankail05.github.io/post/</link>
+    <link>https://phrimm136.github.io/post/</link>
     <description>Recent content in Posts on 가지 않은 길</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kr-ko</language>
-    <lastBuildDate>Wed, 08 Jul 2020 13:20:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2020 13:20:00 +0000</lastBuildDate>
     
-	<atom:link href="https://hankail05.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://phrimm136.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>wsl2 arch로 ssh 구축하는 삽질</title>
-      <link>https://hankail05.github.io/post/2020/07/wsl2-arch-ssh/</link>
-      <pubDate>Wed, 08 Jul 2020 13:20:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/post/2020/07/wsl2-arch-ssh/</link>
+      <pubDate>Wed, 08 Jul 2020 13:20:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/post/2020/07/wsl2-arch-ssh/</guid>
+      <guid>https://phrimm136.github.io/post/2020/07/wsl2-arch-ssh/</guid>
       <description>&lt;p&gt;군대 안에서 코딩하기 위한 발버둥을 기록한 글&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>이맥스 개종 가이드 5 - 혼자서 설정할 때 도움되는 정보</title>
-      <link>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-5/</link>
-      <pubDate>Mon, 11 May 2020 22:33:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/post/2020/05/emacs-conversion-guide-5/</link>
+      <pubDate>Mon, 11 May 2020 22:33:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-5/</guid>
+      <guid>https://phrimm136.github.io/post/2020/05/emacs-conversion-guide-5/</guid>
       <description>&lt;p&gt;이맥스 설정을 하면서 걲었던 일을 팁으로 정리했다. 잘 읽고 여러분은 해메지 않도록 하자.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>이맥스 개종 가이드 4 - 기타 유틸리티</title>
-      <link>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-4/</link>
-      <pubDate>Mon, 11 May 2020 20:47:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/post/2020/05/emacs-conversion-guide-4/</link>
+      <pubDate>Mon, 11 May 2020 20:47:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-4/</guid>
+      <guid>https://phrimm136.github.io/post/2020/05/emacs-conversion-guide-4/</guid>
       <description>&lt;p&gt;작성자 엄선 이맥스 패키지를 마구 깔아서 편의성을 극대화해보자&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>이맥스 개종 가이드 3 - 개발 환경 구축</title>
-      <link>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-3/</link>
-      <pubDate>Sun, 10 May 2020 21:42:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/post/2020/05/emacs-conversion-guide-3/</link>
+      <pubDate>Sun, 10 May 2020 21:42:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-3/</guid>
+      <guid>https://phrimm136.github.io/post/2020/05/emacs-conversion-guide-3/</guid>
       <description>&lt;p&gt;이맥스는 마음만 먹으면 다채로운 기능을 가진 에디터로 만들 수 있다. 파이썬을 예시로 이맥스를 ide 비슷하게 개조해보자.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>이맥스 개종 가이드 2 - 사람다운 이맥스 만들기</title>
-      <link>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-2/</link>
-      <pubDate>Sun, 10 May 2020 15:38:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/post/2020/05/emacs-conversion-guide-2/</link>
+      <pubDate>Sun, 10 May 2020 15:38:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-2/</guid>
+      <guid>https://phrimm136.github.io/post/2020/05/emacs-conversion-guide-2/</guid>
       <description>&lt;p&gt;순정 이맥스는 안 타는 쓰레기라서 그냥 쓰면 기대 수명이 짧아진다. 100세 시대를 이룩하기 위해 본격적으로 패키지를 깔고 설정하자.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>이맥스 개종 가이드 1 - 설치 및 이맥스 기초</title>
-      <link>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-1/</link>
-      <pubDate>Sat, 09 May 2020 22:40:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/post/2020/05/emacs-conversion-guide-1/</link>
+      <pubDate>Sat, 09 May 2020 22:40:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/post/2020/05/emacs-conversion-guide-1/</guid>
+      <guid>https://phrimm136.github.io/post/2020/05/emacs-conversion-guide-1/</guid>
       <description>&lt;p&gt;본 가이드는 프로그래밍 갤러리의 &lt;a href=&#34;https://gall.dcinside.com/board/view/?id=programming&amp;amp;no=748120&#34;&gt;이맥스 개종 가이드&lt;/a&gt;를 계승한 글입니다.&lt;/p&gt;</description>
     </item>
     

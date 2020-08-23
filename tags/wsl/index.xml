@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wsl on 가지 않은 길</title>
-    <link>https://hankail05.github.io/tags/wsl/</link>
+    <link>https://phrimm136.github.io/tags/wsl/</link>
     <description>Recent content in wsl on 가지 않은 길</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kr-ko</language>
-    <lastBuildDate>Wed, 08 Jul 2020 13:20:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2020 13:20:00 +0000</lastBuildDate>
     
-	<atom:link href="https://hankail05.github.io/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://phrimm136.github.io/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>wsl2 arch로 ssh 구축하는 삽질</title>
-      <link>https://hankail05.github.io/post/2020/07/wsl2-arch-ssh/</link>
-      <pubDate>Wed, 08 Jul 2020 13:20:00 +0900</pubDate>
+      <link>https://phrimm136.github.io/post/2020/07/wsl2-arch-ssh/</link>
+      <pubDate>Wed, 08 Jul 2020 13:20:00 +0000</pubDate>
       
-      <guid>https://hankail05.github.io/post/2020/07/wsl2-arch-ssh/</guid>
+      <guid>https://phrimm136.github.io/post/2020/07/wsl2-arch-ssh/</guid>
       <description>&lt;p&gt;군대 안에서 코딩하기 위한 발버둥을 기록한 글&lt;/p&gt;</description>
     </item>
     
